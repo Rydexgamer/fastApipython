@@ -30,3 +30,8 @@ def health_check():
     Endpoint simples para testar se a aplicação subiu.
     """
     return {"status": "ok"}
+
+
+# Aqui registramos as rotas do recurso "Aluno".
+# Em muitos projetos Python/FastAPI, isso faz o papel parecido com "controllers".
+app.include_router(alunos_router)
